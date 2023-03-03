@@ -20,11 +20,12 @@ const App = () => {
 
   return (
     <View>
-      <Text>Un titre</Text>
+      <Text style={styles.text}>Le trombinoscope d'Harry Potter</Text>
       <ScrollView style={styles.scroll}>
         {data?.map(item => (
           <View key={item.id}>
             <Text style={styles.container}>{item.name}</Text>
+            <Text>{item.house}</Text>
             <Image
               source={{
                 uri: item.image
@@ -47,7 +48,12 @@ const styles = StyleSheet.create({
     height: 80,
   },
   scroll: {
-    height: 600,
+    height: 700,
+  },
+  text: {
+    color: 'green',
+    fontSize: 20,
+    justifyContent: 'center',
   },
 });
 
