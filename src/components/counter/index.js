@@ -6,7 +6,7 @@ function Counter() {
 
   useEffect(() => {
     console.log('le counter est à', count);
-  });
+  }, [count]);
   return (
     <View>
       <Text style={((backgroundColor = 'white'), (fontSize = 40))}>
