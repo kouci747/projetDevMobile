@@ -7,6 +7,7 @@ import {
   StyleSheet,
   Button,
 } from 'react-native';
+import Counter from './src/components/counter';
 
 //styles
 const styles = StyleSheet.create({
@@ -67,8 +68,15 @@ const MyToDoList = () => {
 };
 export default function App() {
   return (
-    <View>
-      <MyToDoList />
-    </View>
+    <>
+      <View>
+        <MyToDoList />
+        {/*
+          <Counter nom="kouci" /> {/*using props from the counter component 
+          <Counter nom="sofiane" />
+          <Counter nom="aghiles" />
+          */}
+      </View>
+    </>
   );
 }
